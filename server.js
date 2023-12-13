@@ -15,10 +15,11 @@ app.options('*', cors());
 app.use(bodyParser.json());
 
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
+  host: 'localhostsdb3.mysql.database.azure.com',
+  user: 'sdbroot',
+  password: 'Vimantha@123',
   database: 'my-app',
+  port:3306
 });
 
 db.connect();
