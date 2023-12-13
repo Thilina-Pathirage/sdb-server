@@ -104,6 +104,14 @@ app.get('/search', authenticateUser, async (req, res) => {
   }
 });
 
+app.get('/sample', (req, res) => {
+  const sampleJson = {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "age": 30
+  };
+  res.json(sampleJson);
+});
 
 // Define route to add user
 app.post('/add-user', async (req, res) => {
